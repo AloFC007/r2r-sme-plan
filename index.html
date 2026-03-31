@@ -7,7 +7,6 @@
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Segoe UI', sans-serif; background: #f0f4f8; color: #1a1a2e; }
-
     .auth-banner {
       background: #fff8e1; border-bottom: 2px solid #f39c12;
       padding: 10px 24px; display: flex; align-items: center;
@@ -15,7 +14,6 @@
     }
     .auth-banner.connected { background: #e8f8f0; border-color: #27ae60; }
     .auth-status { font-weight: 600; }
-
     .sync-indicator {
       display: inline-flex; align-items: center; gap: 6px;
       font-size: 0.78rem; padding: 3px 10px; border-radius: 10px;
@@ -26,14 +24,12 @@
     .sync-indicator.success { background: #e8f8f0; color: #1e8449; }
     @keyframes spin { to { transform: rotate(360deg); } }
     .spinner { display: inline-block; animation: spin 1s linear infinite; }
-
     header {
       background: linear-gradient(135deg, #005073, #00bceb);
       color: white; padding: 20px 30px;
     }
     header h1 { font-size: 1.4rem; font-weight: 600; }
     header p  { font-size: 0.85rem; opacity: 0.85; }
-
     .controls {
       display: flex; flex-wrap: wrap; gap: 10px;
       padding: 16px 24px; background: white;
@@ -55,7 +51,6 @@
     .btn-gray    { background: #eee;    color: #333;  }
     .btn:hover   { opacity: 0.85; }
     .btn:disabled { opacity: 0.4; cursor: not-allowed; }
-
     .tabs {
       display: flex; flex-wrap: wrap; gap: 6px;
       padding: 14px 24px 0; background: white;
@@ -68,9 +63,7 @@
     }
     .tab.active { background: #005073; color: white; }
     .tab:hover:not(.active) { background: #cceef9; }
-
     .content { padding: 24px; }
-
     .summary-grid {
       display: grid; grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
       gap: 14px; margin-bottom: 24px;
@@ -79,10 +72,8 @@
       background: white; border-radius: 10px; padding: 16px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.07); border-left: 4px solid #00bceb;
     }
-    .card h3  { font-size: 0.8rem; color: #777; text-transform: uppercase; }
-    .card p   { font-size: 1.5rem; font-weight: 700; color: #005073; margin-top: 4px; }
-    .card small { font-size: 0.75rem; color: #aaa; }
-
+    .card h3 { font-size: 0.8rem; color: #777; text-transform: uppercase; }
+    .card p  { font-size: 1.5rem; font-weight: 700; color: #005073; margin-top: 4px; }
     .calendar-wrap {
       overflow-x: auto; background: white; border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.07); margin-bottom: 24px;
@@ -111,7 +102,6 @@
     .s3 { background: #fff3cd; color: #856404; }
     .today-col { background: #fffbe6 !important; }
     .today-marker { font-size: 0.65rem; color: #e67e22; font-weight: 700; display: block; }
-
     .detail-panel {
       background: white; border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.07); padding: 20px; margin-bottom: 24px;
@@ -139,7 +129,6 @@
     .tag { display: inline-block; border-radius: 10px; padding: 2px 8px; font-size: 0.72rem; }
     .tag.owner-tag    { background: #eafaf1; color: #1e8449; }
     .tag.attendee-tag { background: #f4ecf7; color: #6c3483; }
-
     .attendee-chips {
       display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px;
       min-height: 32px; padding: 6px 8px;
@@ -152,20 +141,20 @@
       font-size: 0.78rem; font-weight: 600;
     }
     .attendee-chip button {
-      background: none; border: none; cursor: pointer; color: #005073; font-size: 0.85rem;
+      background: none; border: none; cursor: pointer;
+      color: #005073; font-size: 0.85rem;
     }
     .attendee-chip button:hover { color: #e74c3c; }
     .attendee-input-row { display: flex; gap: 6px; margin-bottom: 12px; }
     .attendee-input-row input { flex: 1; margin-bottom: 0 !important; }
     .attendee-input-row button {
       padding: 6px 12px; background: #00bceb; color: white;
-      border: none; border-radius: 6px; cursor: pointer; font-size: 0.82rem; font-weight: 600;
+      border: none; border-radius: 6px; cursor: pointer;
+      font-size: 0.82rem; font-weight: 600;
     }
-
     .legend { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 16px; font-size: 0.78rem; }
     .legend-item { display: flex; align-items: center; gap: 6px; }
     .legend-dot  { width: 12px; height: 12px; border-radius: 50%; }
-
     .pillar-notes-layout {
       display: grid; grid-template-columns: 220px 1fr; gap: 20px; min-height: 500px;
     }
@@ -190,7 +179,6 @@
       border-radius: 10px; padding: 1px 7px; font-size: 0.7rem;
     }
     .pillar-nav-item.active .badge-count { background: rgba(255,255,255,0.3); }
-
     .pillar-main { display: flex; flex-direction: column; gap: 16px; }
     .pillar-main-header {
       background: white; border-radius: 10px;
@@ -200,7 +188,6 @@
     }
     .pillar-main-header h2 { font-size: 1.1rem; color: #005073; }
     .header-actions { display: flex; gap: 8px; flex-wrap: wrap; }
-
     .type-filter { display: flex; gap: 8px; flex-wrap: wrap; }
     .type-chip {
       padding: 4px 14px; border-radius: 20px; font-size: 0.78rem;
@@ -214,7 +201,6 @@
     .type-chip.decision  { background:#f4ecf7; color:#6c3483; border-color:#9b59b6; }
     .type-chip.active-filter       { opacity:1; box-shadow:0 2px 6px rgba(0,0,0,0.12); }
     .type-chip:not(.active-filter) { opacity:0.55; }
-
     .items-grid {
       display: grid; grid-template-columns: repeat(auto-fill, minmax(300px,1fr)); gap: 14px;
     }
@@ -252,7 +238,8 @@
     }
     .item-owner-tag {
       display: inline-flex; align-items: center; gap: 4px;
-      background: #f0f4f8; padding: 2px 8px; border-radius: 8px; color: #555; font-size: 0.72rem;
+      background: #f0f4f8; padding: 2px 8px; border-radius: 8px;
+      color: #555; font-size: 0.72rem;
     }
     .priority-tag { padding:1px 8px; border-radius:8px; font-size:0.7rem; font-weight:700; }
     .priority-high   { background:#fdedec; color:#c0392b; }
@@ -263,13 +250,11 @@
     .status-inprogress { background:#fdebd0; color:#784212; }
     .status-done       { background:#d5f5e3; color:#1e8449; }
     .status-blocked    { background:#fdedec; color:#922b21; }
-
     .empty-state { grid-column:1/-1; text-align:center; padding:48px 20px; color:#bbb; }
     .empty-state .empty-icon { font-size:3rem; margin-bottom:12px; }
-
     .modal-overlay {
       display: none; position: fixed; inset: 0;
-      background: rgba(0,0,0,0.45); z-index: 999;
+      background: rgba(0,0,0,0.45); z-index: 9999;
       align-items: center; justify-content: center;
     }
     .modal-overlay.open { display: flex; }
@@ -301,36 +286,19 @@
       letter-spacing: 1px; color: #00bceb;
       border-bottom: 1px solid #e8f4fb; padding-bottom: 4px; margin: 4px 0 12px;
     }
-
-    /* Config Modal */
     .config-panel {
       background: #f8fbff; border: 1px solid #dce3ec;
-      border-radius: 8px; padding: 16px; margin-bottom: 12px; font-size: 0.82rem;
+      border-radius: 8px; padding: 14px; margin-bottom: 12px;
     }
-    .config-panel p { color: #555; margin-bottom: 8px; line-height: 1.6; }
+    .config-panel p { color:#555; font-size:0.82rem; line-height:1.6; margin-bottom:6px; }
     .config-panel code {
-      background: #e8f4fb; padding: 1px 6px;
-      border-radius: 3px; font-size: 0.8rem; color: #005073;
+      background:#e8f4fb; padding:1px 6px;
+      border-radius:3px; font-size:0.8rem; color:#005073;
     }
-    .step-list { list-style: none; counter-reset: steps; }
-    .step-list li {
-      counter-increment: steps; padding: 6px 0 6px 32px; position: relative;
-      font-size: 0.82rem; color: #444; border-bottom: 1px solid #f0f4f8;
-    }
-    .step-list li::before {
-      content: counter(steps);
-      position: absolute; left: 0; top: 6px;
-      background: #00bceb; color: white;
-      width: 20px; height: 20px; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 0.72rem; font-weight: 700;
-    }
-
     footer {
       text-align: center; padding: 16px; font-size: 0.75rem; color: #aaa;
       border-top: 1px solid #dce3ec; margin-top: 10px;
     }
-
     @media (max-width: 700px) {
       .pillar-notes-layout { grid-template-columns: 1fr; }
       .controls { flex-direction: column; align-items: flex-start; }
@@ -347,14 +315,13 @@
   </div>
 </header>
 
-<!-- Auth / Connection Banner -->
+<!-- Auth Banner -->
 <div class="auth-banner" id="authBanner">
   <span id="authIcon">⚠️</span>
   <span class="auth-status" id="authStatusText">Not connected to SharePoint</span>
-  <span id="authUserText" style="color:#555;font-size:0.8rem"></span>
   <button class="btn btn-warning" onclick="openConfig()">⚙️ Configure SharePoint</button>
-  <button class="btn btn-primary" id="syncBtn"  onclick="syncAll()"       disabled>☁️ Sync to SharePoint</button>
-  <button class="btn btn-success" id="pullBtn"  onclick="pullAll()"       disabled>⬇ Pull from SharePoint</button>
+  <button class="btn btn-primary" id="syncBtn" onclick="syncAll()" disabled>☁️ Sync to SharePoint</button>
+  <button class="btn btn-success" id="pullBtn" onclick="pullAll()" disabled>⬇ Pull from SharePoint</button>
   <span class="sync-indicator" id="syncIndicator" style="display:none"></span>
   <span style="margin-left:auto;font-size:0.75rem;color:#aaa" id="lastSyncText"></span>
 </div>
@@ -418,7 +385,8 @@
       <h2>Sessions by Pillar</h2>
       <table style="min-width:unset">
         <thead>
-          <tr><th>Pillar</th><th>Total</th><th>Scheduled</th><th>Completed</th><th>Rescheduled</th><th>Cancelled</th></tr>
+          <tr><th>Pillar</th><th>Total</th><th>Scheduled</th>
+          <th>Completed</th><th>Rescheduled</th><th>Cancelled</th></tr>
         </thead>
         <tbody id="summaryBody"></tbody>
       </table>
@@ -435,7 +403,7 @@
       <div class="pillar-main">
         <div class="pillar-main-header">
           <div>
-            <h2 id="notesActivePillarTitle">Fixed Asset Accounting</h2>
+            <h2 id="notesActivePillarTitle">🏭 Fixed Asset Accounting</h2>
             <div style="font-size:0.78rem;color:#aaa;margin-top:2px">Click a card to edit</div>
           </div>
           <div class="header-actions">
@@ -458,7 +426,7 @@
     </div>
   </div>
 
-</div>
+</div><!-- /content -->
 
 <!-- SESSION MODAL -->
 <div class="modal-overlay" id="modalOverlay">
@@ -486,19 +454,23 @@
     <input id="mOwner" type="text" placeholder="e.g. Jane Smith"/>
     <label>Participants</label>
     <input id="mParticipants" type="text" placeholder="e.g. Process Owner/SMEs, NexGen Team"/>
-    <label>Attendees <span style="font-weight:400;color:#aaa">(press Enter or click Add)</span></label>
+    <label>Attendees</label>
     <div class="attendee-chips" id="attendeeChips"></div>
     <div class="attendee-input-row">
-      <input id="attendeeInput" type="text" placeholder="Type a name…" onkeydown="handleAttendeeKey(event)"/>
+      <input id="attendeeInput" type="text"
+        placeholder="Type a name and press Enter…"
+        onkeydown="handleAttendeeKey(event)"/>
       <button onclick="addAttendee()">+ Add</button>
     </div>
     <div class="section-divider">Agenda & Notes</div>
-    <label>Agenda Items <span style="font-weight:400;color:#aaa">(one per line)</span></label>
-    <textarea id="mAgenda" placeholder="Program Context & Objectives&#10;Process Walkthrough"></textarea>
+    <label>Agenda Items (one per line)</label>
+    <textarea id="mAgenda"
+      placeholder="Program Context & Objectives&#10;Process Walkthrough"></textarea>
     <label>Notes</label>
     <textarea id="mNotes" placeholder="Optional notes..."></textarea>
     <div class="modal-actions">
-      <button class="btn btn-danger" id="deleteBtn" onclick="deleteSession()" style="display:none;margin-right:auto">🗑 Delete</button>
+      <button class="btn btn-danger" id="deleteBtn"
+        onclick="deleteSession()" style="display:none;margin-right:auto">🗑 Delete</button>
       <button class="btn btn-gray" onclick="closeModal()">Cancel</button>
       <button class="btn btn-primary" onclick="saveSession()">Save Session</button>
     </div>
@@ -518,8 +490,10 @@
     </select>
     <label>Item Type</label>
     <select id="iType">
-      <option value="note">📝 Note</option><option value="action">✅ Action Item</option>
-      <option value="reference">🔗 Reference</option><option value="risk">⚠️ Risk</option>
+      <option value="note">📝 Note</option>
+      <option value="action">✅ Action Item</option>
+      <option value="reference">🔗 Reference</option>
+      <option value="risk">⚠️ Risk</option>
       <option value="decision">🏛 Decision</option>
     </select>
     <label>Title</label>
@@ -528,7 +502,7 @@
     <textarea id="iDescription" placeholder="Full details or context..."></textarea>
     <label>Owner</label>
     <input id="iOwner" type="text" placeholder="e.g. John Smith"/>
-    <label>Due Date <span style="font-weight:400;color:#aaa">(optional)</span></label>
+    <label>Due Date (optional)</label>
     <input id="iDueDate" type="date"/>
     <label>Priority</label>
     <select id="iPriority">
@@ -538,13 +512,16 @@
     </select>
     <label>Status</label>
     <select id="iStatus">
-      <option value="open">Open</option><option value="inprogress">In Progress</option>
-      <option value="done">Done</option><option value="blocked">Blocked</option>
+      <option value="open">Open</option>
+      <option value="inprogress">In Progress</option>
+      <option value="done">Done</option>
+      <option value="blocked">Blocked</option>
     </select>
-    <label>Tags <span style="font-weight:400;color:#aaa">(comma separated)</span></label>
+    <label>Tags (comma separated)</label>
     <input id="iTags" type="text" placeholder="e.g. SAP, Depreciation"/>
     <div class="modal-actions">
-      <button class="btn btn-danger" id="deleteItemBtn" onclick="deleteItem()" style="display:none;margin-right:auto">🗑 Delete</button>
+      <button class="btn btn-danger" id="deleteItemBtn"
+        onclick="deleteItem()" style="display:none;margin-right:auto">🗑 Delete</button>
       <button class="btn btn-gray" onclick="closeItemModal()">Cancel</button>
       <button class="btn btn-primary" onclick="saveItem()">Save Item</button>
     </div>
@@ -553,50 +530,30 @@
 
 <!-- CONFIG MODAL -->
 <div class="modal-overlay" id="configModalOverlay">
-  <div class="modal" style="max-width:580px">
+  <div class="modal" style="max-width:560px">
     <button class="modal-close" onclick="closeConfig()">✕</button>
     <h2>⚙️ SharePoint Configuration</h2>
-
     <div class="config-panel">
-      <p>This app connects directly to <strong>SharePoint Lists</strong> using your existing
-      Microsoft 365 login. <strong>No Azure registration or IT admin needed.</strong></p>
-      <p>You just need to create two lists on your SharePoint site:
-      <code>R2R_Sessions</code> and <code>R2R_PillarItems</code>.</p>
+      <p>Enter your SharePoint site URL and the URL of the
+      <code>proxy.html</code> file you uploaded to SharePoint.</p>
+      <p>The proxy enables the app to communicate with your
+      SharePoint Lists without CORS errors.</p>
     </div>
-
-    <div class="section-divider">Your SharePoint Site</div>
-    <label>SharePoint Site URL <span style="font-weight:400;color:#aaa">(paste your site URL)</span></label>
-    <input id="cfgSiteUrl" type="text" placeholder="https://cisco.sharepoint.com/sites/YourSiteName"/>
-
-    <div class="section-divider">One-Time List Setup</div>
-    <div class="config-panel">
-      <ol class="step-list">
-        <li>Go to your SharePoint site and click <strong>+ New → List → Blank list</strong></li>
-        <li>Name it <code>R2R_Sessions</code> and add columns per the guide above</li>
-        <li>Create another list named <code>R2R_PillarItems</code> and add its columns</li>
-        <li>Paste your SharePoint site URL above and click <strong>Save & Connect</strong></li>
-        <li>Click <strong>⬇ Pull from SharePoint</strong> anytime to get the latest team data</li>
-        <li>Click <strong>☁️ Sync to SharePoint</strong> after making changes to share with team</li>
-      </ol>
-    </div>
-
-    <div class="section-divider">R2R_Sessions Columns Needed</div>
-    <div style="font-size:0.8rem;background:#f8fbff;border-radius:6px;padding:12px;border:1px solid #dce3ec;margin-bottom:12px">
-      <code>Pillar</code> (Choice) · <code>SessionName</code> (Text) · <code>SessionDate</code> (Date) ·
-      <code>Owner</code> (Text) · <code>Participants</code> (Text) · <code>Attendees</code> (Multi-line) ·
-      <code>Agenda</code> (Multi-line) · <code>SessionStatus</code> (Choice) · <code>Notes</code> (Multi-line)
-    </div>
-
-    <div class="section-divider">R2R_PillarItems Columns Needed</div>
-    <div style="font-size:0.8rem;background:#f8fbff;border-radius:6px;padding:12px;border:1px solid #dce3ec;margin-bottom:12px">
-      <code>Pillar</code> (Choice) · <code>ItemType</code> (Choice) · <code>ItemTitle</code> (Text) ·
-      <code>Description</code> (Multi-line) · <code>Owner</code> (Text) · <code>DueDate</code> (Date) ·
-      <code>Priority</code> (Choice) · <code>ItemStatus</code> (Choice) · <code>Tags</code> (Text)
-    </div>
-
+    <label>SharePoint Site URL</label>
+    <input id="cfgSiteUrl" type="text"
+      placeholder="https://cisco.sharepoint.com/sites/FTO-EDM"/>
+    <label>Proxy URL
+      <span style="font-weight:400;color:#aaa">
+        (direct link to proxy.html on SharePoint)
+      </span>
+    </label>
+    <input id="cfgProxyUrl" type="text"
+      placeholder="https://cisco.sharepoint.com/sites/FTO-EDM/Shared%20Documents/proxy.html"/>
     <div class="modal-actions">
       <button class="btn btn-gray" onclick="closeConfig()">Cancel</button>
-      <button class="btn btn-warning" onclick="saveConfigAndConnect()">💾 Save & Connect</button>
+      <button class="btn btn-warning" onclick="saveConfigAndConnect()">
+        💾 Save & Connect
+      </button>
     </div>
   </div>
 </div>
@@ -630,310 +587,266 @@ const PILLARS = [
   'Chart of Accounts','Intercompany Accounting'
 ];
 const PILLAR_ICONS = {
-  'Fixed Asset Accounting':'🏭','Lease Accounting':'🏢','Payroll Accounting':'💼',
-  'Chart of Accounts':'📊','Intercompany Accounting':'🔄'
+  'Fixed Asset Accounting':'🏭','Lease Accounting':'🏢',
+  'Payroll Accounting':'💼','Chart of Accounts':'📊',
+  'Intercompany Accounting':'🔄'
 };
 const TYPE_ICONS  = {note:'📝',action:'✅',reference:'🔗',risk:'⚠️',decision:'🏛'};
 const TYPE_LABELS = {note:'Note',action:'Action Item',reference:'Reference',risk:'Risk',decision:'Decision'};
 
-// ═══════════════════════════════════════════════
-// DEFAULT DATA
-// ═══════════════════════════════════════════════
 const DEFAULT_SESSIONS = [
-  {id:1,pillar:'Fixed Asset Accounting', name:'Session 1: Context Setting & Baseline Validation',    date:'2026-04-01',owner:'',participants:'Process Owner/SMEs, Biz PMs, NexGen Team',attendees:[],status:'Scheduled',notes:'',agenda:['Program Context & Objectives','Process & Systems Walkthrough','Baseline Validation & Gap Identification','KPI & Data Collection']},
-  {id:2,pillar:'Fixed Asset Accounting', name:'Session 2: Insight Playback & Hypothesis Validation', date:'2026-04-07',owner:'',participants:'Process Owner/SMEs, Biz PMs, NexGen Team',attendees:[],status:'Scheduled',notes:'',agenda:['Pre-filled Insight Playback','SME Validation (Agree / Challenge / Refine)','Identify Data Gaps & Missing Insights']},
-  {id:3,pillar:'Lease Accounting',        name:'Session 1: Context Setting & Baseline Validation',    date:'2026-04-02',owner:'',participants:'Process Owner/SMEs, Biz PMs, NexGen Team',attendees:[],status:'Scheduled',notes:'',agenda:['Program Context & Objectives','Process & Systems Walkthrough','Baseline Validation & Gap Identification','KPI & Data Collection']},
-  {id:4,pillar:'Payroll Accounting',      name:'Session 1: Context Setting & Baseline Validation',    date:'2026-04-06',owner:'',participants:'Process Owner/SMEs, Biz PMs, NexGen Team',attendees:[],status:'Scheduled',notes:'',agenda:['Program Context & Objectives','Process & Systems Walkthrough','Baseline Validation & Gap Identification','KPI & Data Collection']},
-  {id:5,pillar:'Chart of Accounts',       name:'Session 1: Context Setting & Baseline Validation',    date:'2026-04-08',owner:'',participants:'Process Owner/SMEs, Biz PMs, NexGen Team',attendees:[],status:'Scheduled',notes:'',agenda:['Program Context & Objectives','Process & Systems Walkthrough','Baseline Validation & Gap Identification','KPI & Data Collection']},
+  {id:1,pillar:'Fixed Asset Accounting',name:'Session 1: Context Setting & Baseline Validation',date:'2026-04-01',owner:'',participants:'Process Owner/SMEs, Biz PMs, NexGen Team',attendees:[],status:'Scheduled',notes:'',agenda:['Program Context & Objectives','Process & Systems Walkthrough','Baseline Validation & Gap Identification','KPI & Data Collection']},
+  {id:2,pillar:'Fixed Asset Accounting',name:'Session 2: Insight Playback & Hypothesis Validation',date:'2026-04-07',owner:'',participants:'Process Owner/SMEs, Biz PMs, NexGen Team',attendees:[],status:'Scheduled',notes:'',agenda:['Pre-filled Insight Playback','SME Validation','Identify Data Gaps & Missing Insights']},
+  {id:3,pillar:'Lease Accounting',name:'Session 1: Context Setting & Baseline Validation',date:'2026-04-02',owner:'',participants:'Process Owner/SMEs, Biz PMs, NexGen Team',attendees:[],status:'Scheduled',notes:'',agenda:['Program Context & Objectives','Process & Systems Walkthrough','Baseline Validation & Gap Identification','KPI & Data Collection']},
+  {id:4,pillar:'Payroll Accounting',name:'Session 1: Context Setting & Baseline Validation',date:'2026-04-06',owner:'',participants:'Process Owner/SMEs, Biz PMs, NexGen Team',attendees:[],status:'Scheduled',notes:'',agenda:['Program Context & Objectives','Process & Systems Walkthrough','Baseline Validation & Gap Identification','KPI & Data Collection']},
+  {id:5,pillar:'Chart of Accounts',name:'Session 1: Context Setting & Baseline Validation',date:'2026-04-08',owner:'',participants:'Process Owner/SMEs, Biz PMs, NexGen Team',attendees:[],status:'Scheduled',notes:'',agenda:['Program Context & Objectives','Process & Systems Walkthrough','Baseline Validation & Gap Identification','KPI & Data Collection']},
 ];
 
 function loadSessions(){ const s=localStorage.getItem(SK_SESSIONS); return s?JSON.parse(s):JSON.parse(JSON.stringify(DEFAULT_SESSIONS)); }
 function saveSessions(d){ localStorage.setItem(SK_SESSIONS,JSON.stringify(d)); }
 function loadItems(){ const s=localStorage.getItem(SK_ITEMS); return s?JSON.parse(s):[]; }
 function saveItems(d){ localStorage.setItem(SK_ITEMS,JSON.stringify(d)); }
-function loadConfig(){ const s=localStorage.getItem(SK_CONFIG); return s?JSON.parse(s):{siteUrl:''}; }
+function loadConfig(){ const s=localStorage.getItem(SK_CONFIG); return s?JSON.parse(s):{siteUrl:'',proxyUrl:''}; }
 function saveConfigLocal(c){ localStorage.setItem(SK_CONFIG,JSON.stringify(c)); }
 function resetData(){ if(confirm('Reset local data to defaults?')){ localStorage.removeItem(SK_SESSIONS); renderAll(); } }
 
 // ═══════════════════════════════════════════════
-// SHAREPOINT REST API
-// Uses cookie-based auth (works when HTML is
-// hosted ON SharePoint — same domain)
+// PROXY BRIDGE
 // ═══════════════════════════════════════════════
-let spSiteUrl = '';
+let spSiteUrl   = '';
+let proxyUrl    = '';
+let proxyReady  = false;
+let proxyIframe = null;
+const pending   = {};
 
-function getSpHeaders(digest){
-  const h = {
-    'Accept':       'application/json;odata=nometadata',
-    'Content-Type': 'application/json;odata=nometadata',
-  };
-  if(digest) h['X-RequestDigest'] = digest;
-  return h;
-}
+function initProxy(){
+  if(!proxyUrl) return;
+  const old = document.getElementById('sp-proxy-iframe');
+  if(old) old.remove();
+  proxyReady = false;
 
-async function getRequestDigest(){
-  const r = await fetch(`${spSiteUrl}/_api/contextinfo`, {
-    method:'POST',
-    headers:{'Accept':'application/json;odata=nometadata','Content-Type':'application/json'}
+  proxyIframe = document.createElement('iframe');
+  proxyIframe.id = 'sp-proxy-iframe';
+  proxyIframe.src = proxyUrl;
+  proxyIframe.style.cssText = 'display:none;width:0;height:0;border:none;position:absolute;top:0;left:0;';
+  document.body.appendChild(proxyIframe);
+
+  window.addEventListener('message', (event) => {
+    if(!event.origin.includes('sharepoint.com')) return;
+    const msg = event.data;
+    if(!msg) return;
+
+    if(msg.type === 'PROXY_READY'){
+      proxyReady = true;
+      document.getElementById('syncBtn').disabled = false;
+      document.getElementById('pullBtn').disabled = false;
+      document.getElementById('authBanner').classList.add('connected');
+      document.getElementById('authIcon').textContent = '✅';
+      document.getElementById('authStatusText').textContent =
+        'Connected to SharePoint · '+spSiteUrl;
+      showSync('SharePoint connected ✅','success');
+      return;
+    }
+
+    if(msg.reqId && pending[msg.reqId]){
+      const {resolve,reject} = pending[msg.reqId];
+      delete pending[msg.reqId];
+      if(msg.ok) resolve(msg.data);
+      else reject(new Error(`SP error ${msg.status}: ${msg.error||''}`));
+    }
   });
-  const d = await r.json();
-  return d.FormDigestValue;
 }
 
-async function spGet(endpoint){
-  const r = await fetch(`${spSiteUrl}/_api/web/lists/getbytitle('${endpoint}')/items?$top=5000`, {
-    headers: getSpHeaders()
+function proxyReq(method, url, body){
+  return new Promise((resolve,reject)=>{
+    if(!proxyIframe||!proxyReady){
+      reject(new Error('Proxy not ready — please wait for green banner or reload.'));
+      return;
+    }
+    const reqId = 'r'+Date.now()+Math.random();
+    pending[reqId] = {resolve,reject};
+    setTimeout(()=>{
+      if(pending[reqId]){
+        delete pending[reqId];
+        reject(new Error('Request timed out after 15s'));
+      }
+    },15000);
+    proxyIframe.contentWindow.postMessage(
+      {reqId,method,url,body},
+      new URL(proxyUrl).origin
+    );
   });
-  if(!r.ok) throw new Error(`SharePoint GET failed: ${r.status} ${r.statusText}`);
-  const d = await r.json();
-  return d.value;
 }
 
-async function spPost(listName, item, digest){
-  const r = await fetch(`${spSiteUrl}/_api/web/lists/getbytitle('${listName}')/items`, {
-    method:'POST',
-    headers: getSpHeaders(digest),
-    body: JSON.stringify(item)
-  });
-  if(!r.ok) throw new Error(`SharePoint POST failed: ${r.status}`);
-  return r.json();
+// ═══════════════════════════════════════════════
+// SHAREPOINT API
+// ═══════════════════════════════════════════════
+async function spGet(list){
+  const url=`${spSiteUrl}/_api/web/lists/getbytitle('${list}')/items?$top=5000&$orderby=ID`;
+  const d = await proxyReq('GET',url);
+  return d?d.value:[];
+}
+async function spPost(list,item){
+  return proxyReq('POST',`${spSiteUrl}/_api/web/lists/getbytitle('${list}')/items`,item);
+}
+async function spPatch(list,spId,item){
+  return proxyReq('PATCH',`${spSiteUrl}/_api/web/lists/getbytitle('${list}')/items(${spId})`,item);
 }
 
-async function spPatch(listName, itemId, item, digest){
-  const r = await fetch(`${spSiteUrl}/_api/web/lists/getbytitle('${listName}')/items(${itemId})`, {
-    method:'POST',
-    headers: { ...getSpHeaders(digest), 'X-HTTP-Method':'MERGE', 'IF-MATCH':'*' },
-    body: JSON.stringify(item)
-  });
-  if(!r.ok && r.status!==204) throw new Error(`SharePoint PATCH failed: ${r.status}`);
-}
-
-async function spDelete(listName, itemId, digest){
-  const r = await fetch(`${spSiteUrl}/_api/web/lists/getbytitle('${listName}')/items(${itemId})`, {
-    method:'POST',
-    headers:{ ...getSpHeaders(digest), 'X-HTTP-Method':'DELETE', 'IF-MATCH':'*' }
-  });
-  if(!r.ok && r.status!==204) throw new Error(`SharePoint DELETE failed: ${r.status}`);
-}
-
-// ── Map local session → SharePoint fields ──
+// ═══════════════════════════════════════════════
+// DATA MAPPERS
+// ═══════════════════════════════════════════════
 function sessionToSP(s){
   return {
-    Pillar:         s.pillar,
-    SessionName:    s.name,
-    SessionDate:    s.date ? s.date+'T00:00:00Z' : null,
-    Owner:          s.owner||'',
-    Participants:   s.participants||'',
-    Attendees:      JSON.stringify(s.attendees||[]),
-    Agenda:         JSON.stringify(s.agenda||[]),
-    SessionStatus:  s.status,
-    Notes:          s.notes||'',
-    LocalId:        String(s.id)
+    Pillar:s.pillar,SessionName:s.name,
+    SessionDate:s.date?s.date+'T00:00:00Z':null,
+    Owner:s.owner||'',Participants:s.participants||'',
+    Attendees:JSON.stringify(s.attendees||[]),
+    Agenda:JSON.stringify(s.agenda||[]),
+    SessionStatus:s.status,Notes:s.notes||'',
+    LocalId:String(s.id)
   };
 }
-
-// ── Map SharePoint item → local session ──
 function spToSession(sp){
   return {
-    id:           parseInt(sp.LocalId)||sp.ID,
-    spId:         sp.ID,
-    pillar:       sp.Pillar||'',
-    name:         sp.SessionName||'',
-    date:         sp.SessionDate ? sp.SessionDate.substring(0,10) : '',
-    owner:        sp.Owner||'',
-    participants: sp.Participants||'',
-    attendees:    tryParse(sp.Attendees,[]),
-    agenda:       tryParse(sp.Agenda,[]),
-    status:       sp.SessionStatus||'Scheduled',
-    notes:        sp.Notes||'',
+    id:parseInt(sp.LocalId)||sp.ID,spId:sp.ID,
+    pillar:sp.Pillar||'',name:sp.SessionName||'',
+    date:sp.SessionDate?sp.SessionDate.substring(0,10):'',
+    owner:sp.Owner||'',participants:sp.Participants||'',
+    attendees:tryParse(sp.Attendees,[]),
+    agenda:tryParse(sp.Agenda,[]),
+    status:sp.SessionStatus||'Scheduled',notes:sp.Notes||''
   };
 }
-
-// ── Map local item → SharePoint fields ──
 function itemToSP(i){
   return {
-    Pillar:      i.pillar,
-    ItemType:    i.type,
-    ItemTitle:   i.title,
-    Description: i.description||'',
-    Owner:       i.owner||'',
-    DueDate:     i.dueDate ? i.dueDate+'T00:00:00Z' : null,
-    Priority:    i.priority,
-    ItemStatus:  i.status,
-    Tags:        (i.tags||[]).join(','),
-    LocalId:     String(i.id)
+    Pillar:i.pillar,ItemType:i.type,ItemTitle:i.title,
+    Description:i.description||'',Owner:i.owner||'',
+    DueDate:i.dueDate?i.dueDate+'T00:00:00Z':null,
+    Priority:i.priority,ItemStatus:i.status,
+    Tags:(i.tags||[]).join(','),LocalId:String(i.id)
   };
 }
-
-// ── Map SharePoint item → local item ──
 function spToItem(sp){
   return {
-    id:          parseInt(sp.LocalId)||sp.ID,
-    spId:        sp.ID,
-    pillar:      sp.Pillar||'',
-    type:        sp.ItemType||'note',
-    title:       sp.ItemTitle||'',
-    description: sp.Description||'',
-    owner:       sp.Owner||'',
-    dueDate:     sp.DueDate ? sp.DueDate.substring(0,10) : '',
-    priority:    sp.Priority||'medium',
-    status:      sp.ItemStatus||'open',
-    tags:        sp.Tags ? sp.Tags.split(',').map(t=>t.trim()).filter(Boolean) : [],
-    createdAt:   sp.Created||new Date().toISOString(),
+    id:parseInt(sp.LocalId)||sp.ID,spId:sp.ID,
+    pillar:sp.Pillar||'',type:sp.ItemType||'note',
+    title:sp.ItemTitle||'',description:sp.Description||'',
+    owner:sp.Owner||'',
+    dueDate:sp.DueDate?sp.DueDate.substring(0,10):'',
+    priority:sp.Priority||'medium',status:sp.ItemStatus||'open',
+    tags:sp.Tags?sp.Tags.split(',').map(t=>t.trim()).filter(Boolean):[],
+    createdAt:sp.Created||new Date().toISOString()
   };
 }
-
-function tryParse(str, fallback){
-  try{ return JSON.parse(str); }catch{ return fallback; }
-}
+function tryParse(s,fb){ try{return JSON.parse(s);}catch{return fb;} }
 
 // ═══════════════════════════════════════════════
-// SYNC — Local → SharePoint
+// SYNC & PULL
 // ═══════════════════════════════════════════════
 async function syncAll(){
-  if(!spSiteUrl){ alert('Please configure SharePoint URL first.'); openConfig(); return; }
-  showSync('Syncing to SharePoint…','syncing');
+  if(!proxyReady){alert('Please wait for the green "Connected" banner first.');return;}
+  showSync('Syncing…','syncing');
   try{
-    const digest = await getRequestDigest();
-    await syncSessions(digest);
-    await syncItems(digest);
-    showSync('Synced to SharePoint ✅','success');
-    document.getElementById('lastSyncText').textContent = 'Last sync: '+new Date().toLocaleTimeString();
-  }catch(e){
-    showSync('Sync failed: '+e.message,'error');
-    console.error(e);
+    await syncList('R2R_Sessions',   loadSessions(), sessionToSP);
+    await syncList('R2R_PillarItems', loadItems(),   itemToSP);
+    showSync('Synced ✅','success');
+    document.getElementById('lastSyncText').textContent =
+      'Last sync: '+new Date().toLocaleTimeString();
+  }catch(e){ showSync('Sync failed: '+e.message,'error'); console.error(e); }
+}
+async function syncList(listName,localData,mapper){
+  const existing = await spGet(listName);
+  const map = {};
+  existing.forEach(e=>{ if(e.LocalId) map[e.LocalId]=e.ID; });
+  for(const item of localData){
+    const spItem = mapper(item);
+    const spId   = map[String(item.id)];
+    if(spId) await spPatch(listName,spId,spItem);
+    else     await spPost(listName,spItem);
   }
 }
-
-async function syncSessions(digest){
-  const sessions = loadSessions();
-  // Get existing SP items to find spIds
-  const existing = await spGet('R2R_Sessions');
-  const existingMap = {};
-  existing.forEach(e=>{ if(e.LocalId) existingMap[e.LocalId]=e.ID; });
-
-  for(const s of sessions){
-    const spItem = sessionToSP(s);
-    const spId = existingMap[String(s.id)];
-    if(spId){ await spPatch('R2R_Sessions', spId, spItem, digest); }
-    else     { await spPost('R2R_Sessions', spItem, digest); }
-  }
-}
-
-async function syncItems(digest){
-  const items = loadItems();
-  const existing = await spGet('R2R_PillarItems');
-  const existingMap = {};
-  existing.forEach(e=>{ if(e.LocalId) existingMap[e.LocalId]=e.ID; });
-
-  for(const i of items){
-    const spItem = itemToSP(i);
-    const spId = existingMap[String(i.id)];
-    if(spId){ await spPatch('R2R_PillarItems', spId, spItem, digest); }
-    else     { await spPost('R2R_PillarItems', spItem, digest); }
-  }
-}
-
-// ═══════════════════════════════════════════════
-// PULL — SharePoint → Local
-// ═══════════════════════════════════════════════
 async function pullAll(){
-  if(!spSiteUrl){ alert('Please configure SharePoint URL first.'); openConfig(); return; }
-  if(!confirm('Pull latest data from SharePoint? This will overwrite your local data.')) return;
-  showSync('Pulling from SharePoint…','syncing');
+  if(!proxyReady){alert('Please wait for the green "Connected" banner first.');return;}
+  if(!confirm('Pull latest data from SharePoint? This overwrites your local data.')) return;
+  showSync('Pulling…','syncing');
   try{
-    const [spSessions, spItems] = await Promise.all([
-      spGet('R2R_Sessions'),
-      spGet('R2R_PillarItems')
-    ]);
-    if(spSessions.length){ saveSessions(spSessions.map(spToSession)); }
-    if(spItems.length)   { saveItems(spItems.map(spToItem)); }
-    showSync('Pulled from SharePoint ✅','success');
-    document.getElementById('lastSyncText').textContent = 'Last pull: '+new Date().toLocaleTimeString();
+    const [spS,spI] = await Promise.all([spGet('R2R_Sessions'),spGet('R2R_PillarItems')]);
+    if(spS.length) saveSessions(spS.map(spToSession));
+    if(spI.length) saveItems(spI.map(spToItem));
+    showSync('Pulled ✅','success');
+    document.getElementById('lastSyncText').textContent =
+      'Last pull: '+new Date().toLocaleTimeString();
     renderAll(); renderPillarNav(); renderItemsGrid();
-  }catch(e){
-    showSync('Pull failed: '+e.message,'error');
-    console.error(e);
-  }
+  }catch(e){ showSync('Pull failed: '+e.message,'error'); console.error(e); }
 }
 
 // ═══════════════════════════════════════════════
 // SYNC STATUS UI
 // ═══════════════════════════════════════════════
-function showSync(msg, type){
-  const el = document.getElementById('syncIndicator');
-  el.style.display = 'inline-flex';
-  el.className = 'sync-indicator '+type;
-  el.innerHTML = type==='syncing'
-    ? `<span class="spinner">⟳</span> ${msg}`
-    : msg;
-  if(type!=='syncing') setTimeout(()=>el.style.display='none', 4000);
+function showSync(msg,type){
+  const el=document.getElementById('syncIndicator');
+  el.style.display='inline-flex';
+  el.className='sync-indicator '+type;
+  el.innerHTML=type==='syncing'?`<span class="spinner">⟳</span> ${msg}`:msg;
+  if(type!=='syncing') setTimeout(()=>el.style.display='none',4000);
 }
 
 // ═══════════════════════════════════════════════
 // CONFIG
 // ═══════════════════════════════════════════════
 function openConfig(){
-  const cfg = loadConfig();
-  document.getElementById('cfgSiteUrl').value = cfg.siteUrl||'';
+  const cfg=loadConfig();
+  document.getElementById('cfgSiteUrl').value  = cfg.siteUrl  ||'';
+  document.getElementById('cfgProxyUrl').value = cfg.proxyUrl ||'';
   document.getElementById('configModalOverlay').classList.add('open');
 }
 function closeConfig(){ document.getElementById('configModalOverlay').classList.remove('open'); }
 function saveConfigAndConnect(){
-  const url = document.getElementById('cfgSiteUrl').value.trim().replace(/\/$/,'');
-  if(!url){ alert('Please enter your SharePoint site URL.'); return; }
-  saveConfigLocal({siteUrl:url});
-  spSiteUrl = url;
+  const siteUrl = document.getElementById('cfgSiteUrl').value.trim().replace(/\/$/,'');
+  const pUrl    = document.getElementById('cfgProxyUrl').value.trim();
+  if(!siteUrl){ alert('Please enter your SharePoint site URL.'); return; }
+  if(!pUrl)   { alert('Please enter the proxy URL.'); return; }
+  saveConfigLocal({siteUrl,proxyUrl:pUrl});
+  spSiteUrl = siteUrl;
+  proxyUrl  = pUrl;
   closeConfig();
-  updateBanner(true);
-  alert('✅ Connected! Click "⬇ Pull from SharePoint" to load shared data, or "☁️ Sync" to push your local data.');
+  document.getElementById('authStatusText').textContent = 'Connecting to SharePoint…';
+  showSync('Loading proxy…','syncing');
+  initProxy();
 }
 function updateBanner(connected){
-  const b = document.getElementById('authBanner');
-  const t = document.getElementById('authStatusText');
-  const s = document.getElementById('syncBtn');
-  const p = document.getElementById('pullBtn');
+  const b=document.getElementById('authBanner');
+  document.getElementById('syncBtn').disabled=!connected;
+  document.getElementById('pullBtn').disabled=!connected;
   if(connected){
     b.classList.add('connected');
     document.getElementById('authIcon').textContent='✅';
-    t.textContent = 'Connected to SharePoint · '+spSiteUrl;
-    s.disabled=false; p.disabled=false;
+    document.getElementById('authStatusText').textContent='Connected · '+spSiteUrl;
   } else {
     b.classList.remove('connected');
     document.getElementById('authIcon').textContent='⚠️';
-    t.textContent = 'Not connected to SharePoint';
-    s.disabled=true; p.disabled=true;
+    document.getElementById('authStatusText').textContent=
+      proxyUrl?'Connecting to SharePoint…':'Not connected to SharePoint';
   }
 }
 
 // ═══════════════════════════════════════════════
 // HELPERS
 // ═══════════════════════════════════════════════
-function fmtDate(d){
-  if(!d) return '—';
-  const dt=new Date(d+'T00:00:00');
-  return dt.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
-}
+function fmtDate(d){ if(!d)return'—'; return new Date(d+'T00:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}); }
 function dayLabel(d){ return new Date(d+'T00:00:00').toLocaleDateString('en-US',{weekday:'short'}); }
 function sessionClass(n){ return n.includes('Session 1')?'s1':n.includes('Session 2')?'s2':'s3'; }
-function statusColor(s){ return {Scheduled:'#3498db',Completed:'#27ae60',Rescheduled:'#f39c12',Cancelled:'#e74c3c'}[s]||'#aaa'; }
+function statusColor(s){ return{Scheduled:'#3498db',Completed:'#27ae60',Rescheduled:'#f39c12',Cancelled:'#e74c3c'}[s]||'#aaa'; }
 
 // ═══════════════════════════════════════════════
 // ATTENDEES
 // ═══════════════════════════════════════════════
 let currentAttendees=[];
-function renderAttendeeChips(){
-  document.getElementById('attendeeChips').innerHTML=currentAttendees.map((n,i)=>
-    `<span class="attendee-chip">👤 ${n}<button onclick="removeAttendee(${i})">×</button></span>`).join('');
-}
-function addAttendee(){
-  const inp=document.getElementById('attendeeInput');
-  const v=inp.value.trim();
-  if(v&&!currentAttendees.includes(v)){ currentAttendees.push(v); renderAttendeeChips(); }
-  inp.value=''; inp.focus();
-}
-function removeAttendee(i){ currentAttendees.splice(i,1); renderAttendeeChips(); }
-function handleAttendeeKey(e){ if(e.key==='Enter'){ e.preventDefault(); addAttendee(); } }
+function renderAttendeeChips(){ document.getElementById('attendeeChips').innerHTML=currentAttendees.map((n,i)=>`<span class="attendee-chip">👤 ${n}<button onclick="removeAttendee(${i})">×</button></span>`).join(''); }
+function addAttendee(){ const inp=document.getElementById('attendeeInput'),v=inp.value.trim(); if(v&&!currentAttendees.includes(v)){currentAttendees.push(v);renderAttendeeChips();} inp.value='';inp.focus(); }
+function removeAttendee(i){ currentAttendees.splice(i,1);renderAttendeeChips(); }
+function handleAttendeeKey(e){ if(e.key==='Enter'){e.preventDefault();addAttendee();} }
 
 // ═══════════════════════════════════════════════
 // RENDER CALENDAR
@@ -945,20 +858,13 @@ function renderCalendar(sessions){
   let html='<thead><tr><th rowspan="2" style="width:180px;text-align:left;padding-left:12px">Pillar</th>';
   WEEKS.forEach(w=>html+=`<th colspan="${w.dates.length}" class="week-header">${w.label}</th>`);
   html+='</tr><tr>';
-  DATES.forEach(d=>{
-    const t=d===TODAY;
-    html+=`<th style="${t?'background:#e67e22':''}">${dayLabel(d)}<br/>${fmtDate(d).replace(', 2026','')}${t?'<br/><span class="today-marker">TODAY</span>':''}</th>`;
-  });
+  DATES.forEach(d=>{ const t=d===TODAY; html+=`<th style="${t?'background:#e67e22':''}">${dayLabel(d)}<br/>${fmtDate(d).replace(', 2026','')}${t?'<br/><span class="today-marker">TODAY</span>':''}</th>`; });
   html+='</tr></thead><tbody>';
   pillars.forEach(p=>{
     const ps=sessions.filter(s=>s.pillar===p&&(sf==='all'||s.status===sf));
     html+=`<tr><td class="pillar-cell">${PILLAR_ICONS[p]||''} ${p}</td>`;
-    DATES.forEach(d=>{
-      const t=d===TODAY;
-      const m=ps.find(s=>s.date===d);
-      html+=m
-        ?`<td class="${t?'today-col':''}"><span class="session-badge ${sessionClass(m.name)}" onclick="openEditModal(${m.id})" title="${m.name}${m.owner?' | '+m.owner:''}"><span style="background:${statusColor(m.status)};width:7px;height:7px;border-radius:50%;display:inline-block;margin-right:3px;vertical-align:middle"></span>${m.name.match(/Session \d/)?.[0]||m.name.substring(0,8)}</span></td>`
-        :`<td class="${t?'today-col':''}"></td>`;
+    DATES.forEach(d=>{ const t=d===TODAY; const m=ps.find(s=>s.date===d);
+      html+=m?`<td class="${t?'today-col':''}"><span class="session-badge ${sessionClass(m.name)}" onclick="openEditModal(${m.id})"><span style="background:${statusColor(m.status)};width:7px;height:7px;border-radius:50%;display:inline-block;margin-right:3px;vertical-align:middle"></span>${m.name.match(/Session \d/)?.[0]||m.name.substring(0,8)}</span></td>`:`<td class="${t?'today-col':''}"></td>`;
     });
     html+='</tr>';
   });
@@ -973,11 +879,11 @@ function renderSessionCards(sessions){
   const pf=document.getElementById('filterPillar').value;
   const sf=document.getElementById('filterStatus').value;
   const f=sessions.filter(s=>(pf==='all'||s.pillar===pf)&&(sf==='all'||s.status===sf));
-  if(!f.length){ document.getElementById('sessionCards').innerHTML='<p style="color:#aaa;font-size:0.85rem">No sessions match filter.</p>'; return; }
+  if(!f.length){document.getElementById('sessionCards').innerHTML='<p style="color:#aaa;font-size:0.85rem">No sessions match filter.</p>';return;}
   document.getElementById('sessionCards').innerHTML=f.map(s=>`
     <div class="session-card" onclick="openEditModal(${s.id})">
       <h4><span style="background:${statusColor(s.status)};width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:6px;vertical-align:middle"></span>${s.name}</h4>
-      <div class="meta">📅 ${fmtDate(s.date)} &nbsp;|&nbsp; ${PILLAR_ICONS[s.pillar]||''} ${s.pillar}</div>
+      <div class="meta">📅 ${fmtDate(s.date)} | ${PILLAR_ICONS[s.pillar]||''} ${s.pillar}</div>
       <div class="meta" style="color:${statusColor(s.status)};font-weight:600">● ${s.status}</div>
       ${s.participants?`<div class="meta">👥 ${s.participants}</div>`:''}
       <ul class="agenda-list">${(s.agenda||[]).map(a=>`<li>${a}</li>`).join('')}</ul>
@@ -1002,29 +908,19 @@ function renderSummary(sessions){
     <div class="card" style="border-color:#f39c12"><h3>Rescheduled</h3><p style="color:#f39c12">${byS.Rescheduled}</p></div>
     <div class="card" style="border-color:#e74c3c"><h3>Cancelled</h3><p style="color:#e74c3c">${byS.Cancelled}</p></div>
     <div class="card" style="border-color:#9b59b6"><h3>Pillars Active</h3><p style="color:#9b59b6">${[...new Set(sessions.map(s=>s.pillar))].length}</p></div>`;
-  document.getElementById('summaryBody').innerHTML=PILLARS.map(p=>{
-    const ps=sessions.filter(s=>s.pillar===p);
-    return `<tr><td style="text-align:left;padding-left:12px;font-weight:600">${PILLAR_ICONS[p]||''} ${p}</td><td>${ps.length}</td>${sts.map(st=>`<td>${ps.filter(s=>s.status===st).length}</td>`).join('')}</tr>`;
-  }).join('');
+  document.getElementById('summaryBody').innerHTML=PILLARS.map(p=>{ const ps=sessions.filter(s=>s.pillar===p); return `<tr><td style="text-align:left;padding-left:12px;font-weight:600">${PILLAR_ICONS[p]||''} ${p}</td><td>${ps.length}</td>${sts.map(st=>`<td>${ps.filter(s=>s.status===st).length}</td>`).join('')}</tr>`; }).join('');
 }
 
 // ═══════════════════════════════════════════════
 // PILLAR NOTES
 // ═══════════════════════════════════════════════
-let activePillar='Fixed Asset Accounting', activeTypeFilter='all';
-function setActivePillar(p){ activePillar=p; document.getElementById('notesActivePillarTitle').textContent=(PILLAR_ICONS[p]||'')+' '+p; renderPillarNav(); renderItemsGrid(); }
-function setTypeFilter(t,el){ activeTypeFilter=t; document.querySelectorAll('.type-chip').forEach(c=>c.classList.remove('active-filter')); el.classList.add('active-filter'); renderItemsGrid(); }
-function renderPillarNav(){
-  const items=loadItems();
-  document.getElementById('pillarNavList').innerHTML=PILLARS.map(p=>`
-    <div class="pillar-nav-item ${p===activePillar?'active':''}" onclick="setActivePillar('${p}')">
-      ${PILLAR_ICONS[p]||''} <span>${p}</span>
-      ${items.filter(i=>i.pillar===p).length>0?`<span class="badge-count">${items.filter(i=>i.pillar===p).length}</span>`:''}
-    </div>`).join('');
-}
+let activePillar='Fixed Asset Accounting',activeTypeFilter='all';
+function setActivePillar(p){activePillar=p;document.getElementById('notesActivePillarTitle').textContent=(PILLAR_ICONS[p]||'')+' '+p;renderPillarNav();renderItemsGrid();}
+function setTypeFilter(t,el){activeTypeFilter=t;document.querySelectorAll('.type-chip').forEach(c=>c.classList.remove('active-filter'));el.classList.add('active-filter');renderItemsGrid();}
+function renderPillarNav(){ const items=loadItems(); document.getElementById('pillarNavList').innerHTML=PILLARS.map(p=>`<div class="pillar-nav-item ${p===activePillar?'active':''}" onclick="setActivePillar('${p}')">${PILLAR_ICONS[p]||''} <span>${p}</span>${items.filter(i=>i.pillar===p).length>0?`<span class="badge-count">${items.filter(i=>i.pillar===p).length}</span>`:''}</div>`).join('');}
 function renderItemsGrid(){
   const items=loadItems().filter(i=>i.pillar===activePillar&&(activeTypeFilter==='all'||i.type===activeTypeFilter));
-  if(!items.length){ document.getElementById('itemsGrid').innerHTML=`<div class="empty-state"><div class="empty-icon">📭</div><p>No items yet for <strong>${activePillar}</strong>.</p><p style="margin-top:8px;font-size:0.8rem">Click <strong>＋ Add Item</strong> to get started.</p></div>`; return; }
+  if(!items.length){document.getElementById('itemsGrid').innerHTML=`<div class="empty-state"><div class="empty-icon">📭</div><p>No items yet for <strong>${activePillar}</strong>.</p><p style="margin-top:8px;font-size:0.8rem">Click <strong>＋ Add Item</strong> to get started.</p></div>`;return;}
   const ord={high:0,medium:1,low:2};
   items.sort((a,b)=>(ord[a.priority]||1)-(ord[b.priority]||1));
   document.getElementById('itemsGrid').innerHTML=items.map(item=>`
@@ -1045,42 +941,47 @@ function renderItemsGrid(){
       </div>
     </div>`).join('');
 }
-function fmtIS(s){ return{open:'Open',inprogress:'In Progress',done:'Done',blocked:'Blocked'}[s]||s; }
+function fmtIS(s){return{open:'Open',inprogress:'In Progress',done:'Done',blocked:'Blocked'}[s]||s;}
 
 // ═══════════════════════════════════════════════
 // ITEM MODAL
 // ═══════════════════════════════════════════════
 let editingItemId=null;
-function openAddItemModal(){ editingItemId=null; document.getElementById('itemModalTitle').textContent='Add Item'; ['iMPillar','iType','iTitle','iDescription','iOwner','iDueDate','iPriority','iStatus','iTags'].forEach(id=>document.getElementById(id).value=id==='iMPillar'?activePillar:id==='iType'?'note':id==='iPriority'?'medium':id==='iStatus'?'open':''); document.getElementById('deleteItemBtn').style.display='none'; document.getElementById('itemModalOverlay').classList.add('open'); }
-function openEditItemModal(id){ const item=loadItems().find(x=>x.id===id); if(!item) return; editingItemId=id; document.getElementById('itemModalTitle').textContent='Edit Item'; document.getElementById('iMPillar').value=item.pillar; document.getElementById('iType').value=item.type; document.getElementById('iTitle').value=item.title; document.getElementById('iDescription').value=item.description||''; document.getElementById('iOwner').value=item.owner||''; document.getElementById('iDueDate').value=item.dueDate||''; document.getElementById('iPriority').value=item.priority; document.getElementById('iStatus').value=item.status; document.getElementById('iTags').value=(item.tags||[]).join(', '); document.getElementById('deleteItemBtn').style.display='inline-block'; document.getElementById('itemModalOverlay').classList.add('open'); }
-function closeItemModal(){ document.getElementById('itemModalOverlay').classList.remove('open'); }
-function saveItem(){ const title=document.getElementById('iTitle').value.trim(); if(!title){ alert('Please enter a title.'); return; } const items=loadItems(); const ni={id:editingItemId||Date.now(),pillar:document.getElementById('iMPillar').value,type:document.getElementById('iType').value,title,description:document.getElementById('iDescription').value.trim(),owner:document.getElementById('iOwner').value.trim(),dueDate:document.getElementById('iDueDate').value,priority:document.getElementById('iPriority').value,status:document.getElementById('iStatus').value,tags:document.getElementById('iTags').value.split(',').map(t=>t.trim()).filter(Boolean),createdAt:editingItemId?(items.find(x=>x.id===editingItemId)?.createdAt||new Date().toISOString()):new Date().toISOString()}; if(editingItemId){const idx=items.findIndex(x=>x.id===editingItemId);items[idx]=ni;}else items.push(ni); saveItems(items); activePillar=ni.pillar; document.getElementById('notesActivePillarTitle').textContent=(PILLAR_ICONS[activePillar]||'')+' '+activePillar; closeItemModal(); renderPillarNav(); renderItemsGrid(); }
-function deleteItem(){ if(!editingItemId) return; const items=loadItems(); const item=items.find(x=>x.id===editingItemId); if(!item) return; if(confirm(`Delete "${item.title}"?`)){ saveItems(items.filter(x=>x.id!==editingItemId)); closeItemModal(); renderPillarNav(); renderItemsGrid(); } }
+function openAddItemModal(){editingItemId=null;document.getElementById('itemModalTitle').textContent='Add Item';['iMPillar','iType','iTitle','iDescription','iOwner','iDueDate','iPriority','iStatus','iTags'].forEach(id=>document.getElementById(id).value=id==='iMPillar'?activePillar:id==='iType'?'note':id==='iPriority'?'medium':id==='iStatus'?'open':'');document.getElementById('deleteItemBtn').style.display='none';document.getElementById('itemModalOverlay').classList.add('open');}
+function openEditItemModal(id){const item=loadItems().find(x=>x.id===id);if(!item)return;editingItemId=id;document.getElementById('itemModalTitle').textContent='Edit Item';document.getElementById('iMPillar').value=item.pillar;document.getElementById('iType').value=item.type;document.getElementById('iTitle').value=item.title;document.getElementById('iDescription').value=item.description||'';document.getElementById('iOwner').value=item.owner||'';document.getElementById('iDueDate').value=item.dueDate||'';document.getElementById('iPriority').value=item.priority;document.getElementById('iStatus').value=item.status;document.getElementById('iTags').value=(item.tags||[]).join(', ');document.getElementById('deleteItemBtn').style.display='inline-block';document.getElementById('itemModalOverlay').classList.add('open');}
+function closeItemModal(){document.getElementById('itemModalOverlay').classList.remove('open');}
+function saveItem(){const title=document.getElementById('iTitle').value.trim();if(!title){alert('Please enter a title.');return;}const items=loadItems();const ni={id:editingItemId||Date.now(),pillar:document.getElementById('iMPillar').value,type:document.getElementById('iType').value,title,description:document.getElementById('iDescription').value.trim(),owner:document.getElementById('iOwner').value.trim(),dueDate:document.getElementById('iDueDate').value,priority:document.getElementById('iPriority').value,status:document.getElementById('iStatus').value,tags:document.getElementById('iTags').value.split(',').map(t=>t.trim()).filter(Boolean),createdAt:editingItemId?(loadItems().find(x=>x.id===editingItemId)?.createdAt||new Date().toISOString()):new Date().toISOString()};if(editingItemId){const idx=items.findIndex(x=>x.id===editingItemId);items[idx]=ni;}else items.push(ni);saveItems(items);activePillar=ni.pillar;document.getElementById('notesActivePillarTitle').textContent=(PILLAR_ICONS[activePillar]||'')+' '+activePillar;closeItemModal();renderPillarNav();renderItemsGrid();}
+function deleteItem(){if(!editingItemId)return;const items=loadItems();const item=items.find(x=>x.id===editingItemId);if(!item)return;if(confirm(`Delete "${item.title}"?`)){saveItems(items.filter(x=>x.id!==editingItemId));closeItemModal();renderPillarNav();renderItemsGrid();}}
 
 // ═══════════════════════════════════════════════
 // SESSION MODAL
 // ═══════════════════════════════════════════════
 let editingId=null;
-function openAddModal(){ editingId=null; currentAttendees=[]; document.getElementById('modalTitle').textContent='Add Session'; ['mPillar','mName','mDate','mOwner','mParticipants','mAgenda','mNotes'].forEach(id=>document.getElementById(id).value=id==='mPillar'?'Fixed Asset Accounting':''); document.getElementById('mStatus').value='Scheduled'; document.getElementById('deleteBtn').style.display='none'; renderAttendeeChips(); document.getElementById('modalOverlay').classList.add('open'); }
-function openEditModal(id){ const s=loadSessions().find(x=>x.id===id); if(!s) return; editingId=id; currentAttendees=[...(s.attendees||[])]; document.getElementById('modalTitle').textContent='Edit Session'; document.getElementById('mPillar').value=s.pillar; document.getElementById('mName').value=s.name; document.getElementById('mDate').value=s.date; document.getElementById('mOwner').value=s.owner||''; document.getElementById('mParticipants').value=s.participants; document.getElementById('mAgenda').value=(s.agenda||[]).join('\n'); document.getElementById('mStatus').value=s.status; document.getElementById('mNotes').value=s.notes||''; document.getElementById('deleteBtn').style.display='inline-block'; renderAttendeeChips(); document.getElementById('modalOverlay').classList.add('open'); }
-function closeModal(){ document.getElementById('modalOverlay').classList.remove('open'); }
-function saveSession(){ const sessions=loadSessions(); const ns={id:editingId||Date.now(),pillar:document.getElementById('mPillar').value,name:document.getElementById('mName').value.trim(),date:document.getElementById('mDate').value,owner:document.getElementById('mOwner').value.trim(),participants:document.getElementById('mParticipants').value.trim(),attendees:[...currentAttendees],agenda:document.getElementById('mAgenda').value.split('\n').map(x=>x.trim()).filter(Boolean),status:document.getElementById('mStatus').value,notes:document.getElementById('mNotes').value.trim()}; if(!ns.name||!ns.date){ alert('Please fill in Session Name and Date.'); return; } if(editingId){const idx=sessions.findIndex(x=>x.id===editingId);sessions[idx]=ns;}else sessions.push(ns); saveSessions(sessions); closeModal(); renderAll(); }
-function deleteSession(){ if(!editingId) return; const sessions=loadSessions(); const s=sessions.find(x=>x.id===editingId); if(!s) return; if(confirm(`Delete "${s.name}"?`)){ saveSessions(sessions.filter(x=>x.id!==editingId)); closeModal(); renderAll(); } }
+function openAddModal(){editingId=null;currentAttendees=[];document.getElementById('modalTitle').textContent='Add Session';['mName','mDate','mOwner','mParticipants','mAgenda','mNotes'].forEach(id=>document.getElementById(id).value='');document.getElementById('mPillar').value='Fixed Asset Accounting';document.getElementById('mStatus').value='Scheduled';document.getElementById('deleteBtn').style.display='none';renderAttendeeChips();document.getElementById('modalOverlay').classList.add('open');}
+function openEditModal(id){const s=loadSessions().find(x=>x.id===id);if(!s)return;editingId=id;currentAttendees=[...(s.attendees||[])];document.getElementById('modalTitle').textContent='Edit Session';document.getElementById('mPillar').value=s.pillar;document.getElementById('mName').value=s.name;document.getElementById('mDate').value=s.date;document.getElementById('mOwner').value=s.owner||'';document.getElementById('mParticipants').value=s.participants;document.getElementById('mAgenda').value=(s.agenda||[]).join('\n');document.getElementById('mStatus').value=s.status;document.getElementById('mNotes').value=s.notes||'';document.getElementById('deleteBtn').style.display='inline-block';renderAttendeeChips();document.getElementById('modalOverlay').classList.add('open');}
+function closeModal(){document.getElementById('modalOverlay').classList.remove('open');}
+function saveSession(){const sessions=loadSessions();const ns={id:editingId||Date.now(),pillar:document.getElementById('mPillar').value,name:document.getElementById('mName').value.trim(),date:document.getElementById('mDate').value,owner:document.getElementById('mOwner').value.trim(),participants:document.getElementById('mParticipants').value.trim(),attendees:[...currentAttendees],agenda:document.getElementById('mAgenda').value.split('\n').map(x=>x.trim()).filter(Boolean),status:document.getElementById('mStatus').value,notes:document.getElementById('mNotes').value.trim()};if(!ns.name||!ns.date){alert('Please fill in Session Name and Date.');return;}if(editingId){const idx=sessions.findIndex(x=>x.id===editingId);sessions[idx]=ns;}else sessions.push(ns);saveSessions(sessions);closeModal();renderAll();}
+function deleteSession(){if(!editingId)return;const sessions=loadSessions();const s=sessions.find(x=>x.id===editingId);if(!s)return;if(confirm(`Delete "${s.name}"?`)){saveSessions(sessions.filter(x=>x.id!==editingId));closeModal();renderAll();}}
 
 // ═══════════════════════════════════════════════
 // TABS
 // ═══════════════════════════════════════════════
-function switchTab(name,el){ ['calendar','sessions','summary','notes'].forEach(t=>{ document.getElementById('tab-'+t).style.display=t===name?'block':'none'; }); document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active')); el.classList.add('active'); document.getElementById('sessionControls').style.display=name==='notes'?'none':'flex'; if(name==='notes'){ renderPillarNav(); renderItemsGrid(); } }
+function switchTab(name,el){['calendar','sessions','summary','notes'].forEach(t=>{document.getElementById('tab-'+t).style.display=t===name?'block':'none';});document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));el.classList.add('active');document.getElementById('sessionControls').style.display=name==='notes'?'none':'flex';if(name==='notes'){renderPillarNav();renderItemsGrid();}}
 
 // ═══════════════════════════════════════════════
-// RENDER ALL + INIT
+// INIT
 // ═══════════════════════════════════════════════
-function renderAll(){ const s=loadSessions(); renderCalendar(s); renderSessionCards(s); renderSummary(s); renderPillarNav(); }
+function renderAll(){const s=loadSessions();renderCalendar(s);renderSessionCards(s);renderSummary(s);renderPillarNav();}
 
-// Init
-const _cfg = loadConfig();
-if(_cfg.siteUrl){ spSiteUrl=_cfg.siteUrl; updateBanner(true); }
-else updateBanner(false);
+const _cfg=loadConfig();
+if(_cfg.siteUrl && _cfg.proxyUrl){
+  spSiteUrl = _cfg.siteUrl;
+  proxyUrl  = _cfg.proxyUrl;
+  updateBanner(false);
+  initProxy();
+} else {
+  updateBanner(false);
+}
 renderAll();
 </script>
 </body>
